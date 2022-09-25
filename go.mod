@@ -1,4 +1,4 @@
-module towels
+module github.com/lexlapax/towels
 
 go 1.19
 
