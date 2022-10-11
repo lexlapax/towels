@@ -1,3 +1,0 @@
-[submodule "vendors/go-mruby"]
-	path = vendors/go-mruby
-	url = https://github.com/mitchellh/go-mruby
