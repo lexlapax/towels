@@ -1,23 +1,28 @@
 package main
 
 import (
-	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
 )
 
-func main() {
+func makeUI() (*widget.Label, *widget.Entry) {
+	out := widget.NewLabel("Hello world!")
+	in := widget.NewEntry()
+	in.OnChanged = func(content string) {
+		out.SetText("Hello " + content + "!")
+	}
+	return out, in
+}
+
+func Run() {
 	a := app.New()
-	w := a.NewWindow("Hello World")
-	w.SetMaster()
+	w := a.NewWindow("Hello Person")
 
-	w.SetContent(widget.NewLabel("Hello World!"))
-	w.Show()
+	w.SetContent(container.NewVBox(makeUI()))
+	w.ShowAndRun()
+}
 
-	w2 := a.NewWindow("Larger")
-	w2.SetContent(widget.NewLabel("More content"))
-	w2.Resize(fyne.NewSize(100, 100))
-	w2.Show()
-
-	a.Run()
+func main() {
+	Run()
 }
