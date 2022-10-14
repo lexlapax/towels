@@ -1,0 +1,6 @@
+[workspace]
+members = [
+	"towels_cmd",
+	"towels_lib",
+	"towels_gui",
+]

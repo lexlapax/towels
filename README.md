@@ -1,6 +1,6 @@
 # Towels
 
-*Towels - jack of all - ala hitchhiker's guid to galaxy towels*
+*Towels - jack of all - ala hitchhiker's guide to galaxy towels*
 
 Make programming fun to experiment with, do quick calculations, try out things.. and then move on to your favorite {programming language} dev environment of choice
 
@@ -38,11 +38,38 @@ Towels is not processing or node box
 
 ## Usage
 
-TODO: Write usage instructions here
 
 ## Development
 
-- 
+##### Cmd Line todo
+- file magic
+    - identify file type
+- Archive
+    - Zip/Unzip (stdlib)
+    - bzip/bunzip
+    - tar/untar (crystar)
+    - gzip (stdlib)
+
+- find files
+    - (lff)
+- images
+    - convert images
+    - resize images
+- audio
+    - convert audio
+    - resample audio
+- emoji
+    - find emoji (veelenga / emoji.cr)
+- net
+    - http
+        - get
+        - post
+        - download
+- calculator
+    - bc 
+    - currency (money)
+    - units (crunits)
+
 
 
 -
