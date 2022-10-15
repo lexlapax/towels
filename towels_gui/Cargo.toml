@@ -1,8 +1,10 @@
 [package]
 name = "towels_gui"
+description = "Towels (Gui)"
 version = "0.1.0"
 authors =["lexlapax@gmail.com"]
 edition = "2021"
+repository = "https://github.com/lexlapax/towels/towels_gui/"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

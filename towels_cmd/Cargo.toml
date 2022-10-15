@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 towels_lib = { path = "../towels_lib" }
 towels_gui = { path = "../towels_gui" }
+clap = { version = "4.0.15", features = ["derive"] }
 

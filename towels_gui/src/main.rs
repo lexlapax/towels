@@ -9,7 +9,7 @@ fn main() {
 
     let native_options = eframe::NativeOptions::default();
     eframe::run_native(
-        "eframe template",
+        env!("CARGO_PKG_DESCRIPTION"),
         native_options,
         Box::new(|cc| Box::new(towels_gui::TemplateApp::new(cc))),
     );

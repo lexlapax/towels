@@ -45,9 +45,9 @@ Towels is not processing or node box
 - file magic
     - identify file type
 - Archive
-    - Zip/Unzip (stdlib)
+    - Zip/Unzip (zip-rs/zip)
     - bzip/bunzip
-    - tar/untar (crystar)
+    - tar/untar (alexcrichton / tar-rs)
     - gzip (stdlib)
 
 - find files
