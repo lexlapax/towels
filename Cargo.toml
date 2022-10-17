@@ -4,3 +4,6 @@ members = [
 	"towels_lib",
 	"towels_gui",
 ]
+
+# Required for wgpu v0.10 feature resolution.
+resolver = "2"

@@ -6,25 +6,51 @@ authors =["lexlapax@gmail.com"]
 edition = "2021"
 repository = "https://github.com/lexlapax/towels/towels_gui/"
 
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# palette = {version = "0.6.1", features = ["named_from_str"] }
 egui = "0.19.0"
 eframe = { version = "0.19.0", features = ["persistence"] }
 serde = { version = "1", features = ["derive"] } # You only need this if you want app persistence
+nannou = "0.18.1"
+nannou_conrod = "0.18.0"
+nannou_egui = "0.5.0"
+egui_demo_lib = "0.15.0"
 
-# native:
-[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-tracing-subscriber = "0.3"
+# # native:
+# [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# tracing-subscriber = "0.3"
 
-# # web:
-# [target.'cfg(target_arch = "wasm32")'.dependencies]
-# console_error_panic_hook = "0.1.6"
-# tracing-wasm = "0.2"
-
-
-# [profile.release]
-# opt-level = 2 # fast and small wasm
-
-
-# [patch.crates-io]
+# User Interface
+[[example]]
+name = "circle_packing"
+path = "example/circle_packing.rs"
+[[example]]
+name = "tune_color"
+path = "example/tune_color.rs"
+[[example]]
+name = "simple_ui"
+path = "example/simple_ui.rs"
+[[example]]
+name = "nannou_egui_demo_app"
+path = "example/nannou_egui_demo_app.rs"
+[[example]]
+name = "schotter1"
+path = "example/schotter1.rs"
+[[example]]
+name = "schotter2"
+path = "example/schotter2.rs"
+[[example]]
+name = "schotter3"
+path = "example/schotter3.rs"
+[[example]]
+name = "schotter3a"
+path = "example/schotter3a.rs"
+[[example]]
+name = "schotter4"
+path = "example/schotter4.rs"
+[[example]]
+name = "schotter4a"
+path = "example/schotter4a.rs"
