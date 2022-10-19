@@ -1,9 +1,10 @@
-[workspace]
-members = [
-	"towels_cmd",
-	"towels_lib",
-	"towels_gui",
-]
+[package]
+name = "towels"
+version = "0.1.0"
+edition = "2021"
 
-# Required for wgpu v0.10 feature resolution.
-resolver = "2"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.0.15", features = ["derive"] }
+
